@@ -19,7 +19,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        Email registration
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -84,7 +84,9 @@ const handleClick=(event)=>{
       if (res) {
         setUserData(res)
       } else {
-        alert('invalid')
+        alert('incorrect data')
+        setEmail('')
+        setPassword('')
       }
   
 })}
