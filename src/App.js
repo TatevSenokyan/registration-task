@@ -7,17 +7,7 @@ import UserInfo from "./UserInfo"
 
 function App() {
 
-  useEffect(()=>{
-    fetch("/mydatas").then(res=>{
-      if(res.ok) {
-        return res.json()
-      }
-    }).then(jsonRes=>{
-      console.log(jsonRes)
-      
-       
-        });
-  })
+
 
   return (
     <div className="App">
